@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Indu Prakash | My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Indu Prakash Deo Pandey — Computer Science graduate and frontend developer. Explore skills, projects and contact details." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Indu Prakash Deo Pandey | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">IP<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <h1>Hi, I'm Indu Prakash</h1>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
+        <p class="intro-line">Hello, I'm</p>
+        <h1>Indu Prakash<br /><span>Deo Pandey.</span></h1>
+        <h2>Computer Science Graduate <span class="accent">·</span> Frontend Developer</h2>
+        <p class="hero-description">I build clean, responsive web experiences and enjoy turning ideas into useful digital products. I’m always learning, experimenting and improving my craft.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-quiet" href="#contact">Get in touch</a>
+        </div>
+        <div class="social-note">HTML <span>·</span> CSS <span>·</span> JavaScript <span>·</span> React</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative developer illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-top"><i></i><i></i><i></i><span>developer.js</span></div>
+          <pre><code><b>const</b> developer = {
+  name: <em>'Indu Prakash'</em>,
+  focus: <em>'Frontend'</em>,
+  curious: <strong>true</strong>,
+  keepLearning() {
+    <b>return</b> <em>'Every day'</em>;
+  }
+};</code></pre>
+        </div>
+        <div class="float-chip chip-html">HTML5</div><div class="float-chip chip-css">CSS3</div><div class="float-chip chip-js">JS</div>
+      </div>
+    </section>
 
-    <h2>A Frontend Developer</h2>
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>A little about <span>me.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead">Curious by nature. Developer by choice.</p>
+        <div class="about-text"><p>I’m a Computer Science graduate interested in frontend development and building intuitive websites. I enjoy working with web technologies, exploring new tools and solving problems through code.</p><p>My goal is to keep growing as a developer while creating experiences that are accessible, useful and enjoyable to use.</p></div>
+      </div>
+    </section>
 
-    <p>
-        I am a Computer Science graduate who enjoys
-        creating websites and learning new things.
-        I started my journey with HTML, CSS and JavaScript.
-        I like experimenting with designs and finding
-        better ways to build websites.
-    </p>
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">02 / TOOLKIT</p><h2>Skills & <span>technologies.</span></h2></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript · React.js</p></article>
+          <article class="skill-card"><div class="skill-icon">⌁</div><h3>Programming</h3><p>Python · C++</p></article>
+          <article class="skill-card"><div class="skill-icon">▦</div><h3>Data & Analytics</h3><p>Python · Pandas · NumPy · Matplotlib</p></article>
+          <article class="skill-card"><div class="skill-icon">◈</div><h3>Tools & Concepts</h3><p>Git · GitHub · DBMS · Responsive Design</p></article>
+        </div>
+      </div>
+    </section>
 
-    <h2>What I Know</h2>
+    <section class="section container" id="projects">
+      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I’ve <span>built.</span></h2><p class="section-subtitle">A selection of projects and learning work. Project links can be added as each repository is published.</p></div>
+      <div class="projects-grid">
+        <article class="project-card"><div class="project-number">01</div><div><p class="project-type">MACHINE LEARNING</p><h3>Credit Card Fraud Detection</h3><p>Exploring transaction data and classification techniques to identify potentially fraudulent activity.</p><div class="tags"><span>Python</span><span>ML</span><span>Data Analysis</span></div></div></article>
+        <article class="project-card"><div class="project-number">02</div><div><p class="project-type">AI / COMPUTER VISION</p><h3>AI Image Recognition</h3><p>A learning project focused on image classification and understanding visual data with AI techniques.</p><div class="tags"><span>Python</span><span>AI</span><span>Image Processing</span></div></div></article>
+        <article class="project-card"><div class="project-number">03</div><div><p class="project-type">WEB APPLICATION</p><h3>Weather Report App</h3><p>A web app concept for presenting weather information in a simple, easy-to-read interface.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+        <article class="project-card"><div class="project-number">04</div><div><p class="project-type">AUTOMATION / AI</p><h3>AI Voice Assistant</h3><p>A project exploring voice interaction and assistant-style automation.</p><div class="tags"><span>Python</span><span>AI</span><span>Automation</span></div></div></article>
+      </div>
+    </section>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-    </ul>
-
-    <h2>My Work</h2>
-
-    <p>
-        I am currently working on my personal portfolio
-        and building projects to improve my development skills.
-    </p>
-
-    <h2>Contact Me induprakashdeopandey@gmail.com</h2>
-
-    <p>Email: induprakashdeopandey@gmail.com</p>
-
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">04 / CONTACT</p><h2>Have an idea?<br /><span>Let’s talk.</span></h2><p class="contact-copy">I’m open to opportunities, collaborations and conversations about technology.</p></div>
+        <a class="contact-email" href="mailto:induprakashdeopandey@gmail.com">induprakashdeopandey@gmail.com <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container"><a class="brand" href="#home">IP<span>.</span></a><p>Designed & built with care by Indu Prakash.</p><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>
