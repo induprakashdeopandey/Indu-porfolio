@@ -89,6 +89,7 @@
       <div class="container contact-inner">
         <div><p class="eyebrow">04 / CONTACT</p><h2>Have an idea?<br /><span>Let’s talk.</span></h2><p class="contact-copy">I’m open to opportunities, collaborations and conversations about technology.</p></div>
         <form class="contact-form" id="contact-form">
+          <div class="form-honeypot" aria-hidden="true"><label for="contact-company">Leave this field empty</label><input id="contact-company" name="company" type="text" tabindex="-1" autocomplete="off" /></div>
           <label for="contact-name">Your name</label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="80" required />
           <label for="contact-email">Your email</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required />
           <label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="5" maxlength="3000" required></textarea>
