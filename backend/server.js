@@ -40,7 +40,7 @@ app.post("/api/contact", async (req, res) => {
     const { name, email, message } = req.body || {};
     if (typeof name !== "string" || typeof email !== "string" ||
         typeof message !== "string" || !name.trim() ||
-        !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email) ||
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
         !message.trim() || name.length > 80 || email.length > 254 ||
         message.length > 3000) {
       return res.status(400).json({
