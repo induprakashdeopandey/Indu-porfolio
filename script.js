@@ -30,7 +30,9 @@ contactForm?.addEventListener("submit", async (event) => {
   formStatus.textContent = "Sending your message…";
   try {
     const response = await fetch(apiUrl.replace(/\/$/, "") + "/api/contact", {
-      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload)
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.message || "Unable to send your message.");
