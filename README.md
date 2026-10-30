@@ -71,7 +71,7 @@ The health endpoint is available at `http://localhost:5000/health`.
 - **Root Directory:** `backend`
 - **Build Command:** `npm install`
 - **Start Command:** `npm start`
-- Add `MONGODB_URI` and `FRONTEND_ORIGIN` in the Render environment variables.
+- Add `MONGODB_URI` and `FRONTEND_ORIGIN` in the Render environment variables.\n- For email alerts, create a Resend account, verify a sending domain, then set `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, and `CONTACT_TO_EMAIL` in Render. Email alerts stay disabled until these values are configured; contact messages are still saved in MongoDB. Never commit API keys.
 - Keep database credentials private. Never commit the real `.env` file or MongoDB connection string.
 
 ### Frontend
